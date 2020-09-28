@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="headercss.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="slidecss.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="paginationcss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="education.html">Born & Education</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="future_plan.html">Future plan</a>
+  <a href="about_family.html">About Family</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<h2 style="text-align:center">Hi, Welcome to the personal website of Towfiqul Islam Fardous
+</h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="pictures/mypic1.jpg" style="width:100%">
+   <div class="text">February 2020</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="pictures/mypic2.jpg" style="width:100%">
+   <div class="text" style="color:black;">June 2016</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="pictures/mypic3.jpg" style="width:100%">
+   <div class="text">February 2020</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+    <h1 style="text-align:center"> Early Life</h1> 
+<p> I was born in 9th July 1999 in Madaripur,Dhaka. After that I had to leave Madaripur and and shifted to Barishal as my father and mother works there. When I was 6 year old, my mother took me to a school and get myself admitted there.</p> 
+<h1 style="text-align:center"> My Educational Qualifications</h1> 
+<p> I'm a student of Computer Science and Engineering of <a href="http://www.uiu.ac.bd/">United International Unversity</a. My previous academic background is given below on the table.</p> 
+<table style="width:100%" border="1">
+  <tr>
+    <th>School/College</th>
+    <th>Degree</th> 
+    <th>Passing Year</th>
+  </tr>
+  <tr>
+    <td>Al-Helal Academy</td>
+    <td>PSC</td>
+    <td>2010</td>
+  </tr>
+  <tr>
+    <td>Govt Gournadi Pilot High School</td>
+    <td>SSC</td>
+    <td>2016</td>
+  </tr>
+  <tr>
+    <td>Mahilara Degree College</td>
+    <td>HSC</td>
+    <td>2018</td>
+  </tr>
+</table>
+
+    
+<h1 style="text-align:center"> Find Me on Social Media </h1> 
+  <h4 style="text-align:center"> <a href="https://www.facebook.com/Demon.towfiQ.starboy69.fuckyou">FACEBOOK</a>
+  <a href="https://www.instagram.com/to_wf_iq/?fbclid=IwAR1hAgV9145xPpNAwBCSA23mvw5gHEKnmO84rEE_E3RUHKIYgIrPa9ZBvEo">INSTAGRAM</a> 
+  <a href="https://www.youtube.com/channel/UCHlDpaIR-XoZfylYDTP07NQ">YOUTUBE</a></h4> 
+<div class="pagination" style="width:400px; margin:0 auto;">
+  <a href="index.html">&laquo;</a>
+  <a class="active" href="index.html">1</a>
+  <a href="education.html">2</a>
+  <a href="achievements.html">3</a>
+  <a href="hobbies.html">4</a>
+  <a href="future_plan.html">5</a>
+  <a href="about_family.html">6</a>
+  <a href="about_family.html">&raquo;</a>
+    
+    
+</div>
+    
+</body>
+</html>
